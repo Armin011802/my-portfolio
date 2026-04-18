@@ -96,15 +96,17 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 100px 15px 30px;
   gap: 40px;
 
   min-height: 100vh;
 
-  padding: 90px 20px 20px;
+  padding: 50px 100px 20px;
   margin: 0;
 
   text-align: center;
@@ -112,15 +114,15 @@ body {
 }
 
 /* CENTER CONTENT PROPERLY */
-.hero-content {
-  flex: 1 1 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+hero-content {
+    flex: unset;
+    width: 100%;
 
-  text-align: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
 /* FIX TITLE CENTER */
 .hero-content h1 {
